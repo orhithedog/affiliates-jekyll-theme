@@ -1,6 +1,9 @@
 <!-- begin post -->
-{% assign author = site.authors[post.author] %}
+{% assign author = site.data.authors[post.author] %}
+<!--
 <div class="col-sm-6">
+-->
+<div class="col-md-6">
 <div class="card">
     <div class="row">
         <div class="col-md-5 wrapthumbnail">
@@ -24,8 +27,10 @@
                         {% endif %}
                         <span class="post-date">{{ post.date | date_to_string }}</span>
                         </span>
+                        <!-- hide link
                         <span class="post-read-more"><a href="{{ post.url | absolute_url }}" title="Read Story"><i class="fa fa-link"></i></a></span>
                         <div class="clearfix"></div>
+                        -->
                     </div>
                 </div>
             </div>
