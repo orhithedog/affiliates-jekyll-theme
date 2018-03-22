@@ -1,0 +1,19 @@
+<div class="collapse navbar-collapse" id="navbarsWow">
+	<ul class="navbar-nav ml-auto">
+		{% for link in site.data.navigation %}
+		{% assign class = "" %}
+	    {% if link.link == page.url %}
+	        {% assign class = class | append: " active" %}
+	    {% endif %}
+
+		<li class="nav-item {{ class }}">                
+			<a class="nav-link" href="{% include relative-src.html src=link.link %}">{{ link.name }}</a>
+		</li>
+		{% endfor %}
+
+		<!-- link to wikiloc -->
+		<li class="nav-item">                
+	        <a target="_blank" rel="noopener" class="nav-link" href="https://es.wikiloc.com/wikiloc/user.do?id=3717075">Wikiloc</a>
+	    </li>
+	</ul>
+</div>

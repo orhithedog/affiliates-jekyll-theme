@@ -1,0 +1,8 @@
+- name: Inicio
+  link: /
+- name: Rutas
+  link: /posts/
+- name: Sobre Orhi
+  link: /about/
+- name: Contacto
+  link: /contact/

@@ -1,11 +1,15 @@
 # Site
-name: Affiliates Theme for Jekyll
+name: Blog de rutas de Orhithedog
 description: Jekyll Theme for Blogging
 meta_description: "Jekyll theme for blogging."
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
+favicon: 'assets/images/favicon.png'
 paginate: 12
+
+url: "https://orhithedog.github.io/"
 baseurl: 
+permalink: pretty
+
 email: 'wowthemesnet@gmail.com'
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
