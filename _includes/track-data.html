@@ -1,0 +1,35 @@
+<!-- Track info data in track-sidebar include for post-track layout -->
+
+<ul class="tags" style="list-none;">
+	{% if include.post.track-data.time %}
+    <li title="Tiempo">{% include fa-icons.html icon="time" %}<span>{{ include.post.track-data.time }}</span></li>
+    {% endif %}
+    {% if include.post.track-data.distance %}
+    <li title="Distancia">{% include fa-icons.html icon="distance" %}<span>{{ include.post.track-data.distance }}</span></li>
+    {% endif %}
+    {% if include.post.track-data.loop %}
+    <li title="Circular">{% include fa-icons.html icon="loop" %}<span>{{ include.post.track-data.loop }}</span></li>
+    {% endif %}
+    {% if include.post.track-data.difficulty %}
+    <li title="Dificultad">{% include fa-icons.html icon="difficulty" %}<span>{{ include.post.track-data.difficulty }}</span></li>
+    {% endif %}
+    {% if include.post.track-data.starting-point %}
+    <li title="Punto de inicio">{% include fa-icons.html icon="starting-point" %}<span>{{ include.post.track-data.starting-point }}</span></li>
+    {% endif %}
+    {% if include.post.track-data.zone %}
+    <li title="Zona">{% include fa-icons.html icon="zone" %}<span>{{ include.post.track-data.zone }}</span></li>
+    {% endif %}
+    <!--
+    <li><span>Tree: { { include.post.track-data.tree } }</span></li>
+	-->
+</ul>
+
+
+
+<!-- example with icons
+<li title="time">{ % include fa-icons.html icon="time" % }<span>{ { include.post.track.time } }</span></li>
+-->
+
+<!-- example with text
+<li><span>Tiempo: { { include.post.track-data.time } }</span></li>
+-->

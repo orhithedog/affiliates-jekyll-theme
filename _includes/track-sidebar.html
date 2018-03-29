@@ -1,0 +1,18 @@
+<!-- Sidebar for post-track layout -->
+
+<div class="sidebar">
+    <div class="sidebar-section" sytle="background:#fff100;">
+        <h5><span>Datos de la ruta</span></h5>
+        {% include track-data.html post=page %}
+    </div>
+
+    <div class="sidebar-section">
+        <h5><span>Recomendaciones</span></h5>
+        {{ page.track-data.extended-info_markdown | markdownify }}
+    </div>
+        
+    <div class="sidebar-section">
+        <h5><span>Enlaces de interés</span></h5>
+        {{ page.track-data.useful-links_markdown | markdownify }}
+    </div>   
+</div>

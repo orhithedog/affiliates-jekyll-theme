@@ -1,0 +1,16 @@
+{% case include.icon %}
+	{% when "time" %}
+		<i class="far fa-clock"></i>
+	{% when "distance" %}	
+		<i class="fas fa-long-arrow-alt-right"></i>
+	{% when "loop" %}
+		<i class="fas fa-undo"></i>
+	{% when "difficulty" %}
+		<i class="fas fa-align-left fa-rotate-270"></i>
+	{% when "starting-point" %}	
+		<i class="fas fa-map-pin"></i>
+	{% when "zone" %}
+		<i class="far fa-map"></i>
+	{% when "tree" %}
+		<i class="fab fa-envira"></i>
+{% endcase %}
