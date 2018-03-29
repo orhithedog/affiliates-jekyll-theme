@@ -7,19 +7,18 @@ favicon: 'assets/images/favicon.png'
 paginate: 12
 
 url: "https://orhithedog.github.io/"
-baseurl: 
-permalink: pretty
+baseurl:
+
+# override the default url structure
+# https://jekyllrb.com/docs/permalinks/
+permalink: /:year/:month/:day/:title/
 
 email: 'wowthemesnet@gmail.com'
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
-#sharethis: '<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'
+sharethis: '<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'
 
-# Plugins
-plugins: 
-  - jekyll-paginate
-  - jekyll-archives
-    
+
 # Archives
 jekyll-archives:
   enabled:
@@ -27,7 +26,13 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
-    
+
+
+# Plugins
+plugins: 
+  - jekyll-paginate
+  - jekyll-archives
+
 # Other
 markdown: kramdown
 highlighter: rouge
