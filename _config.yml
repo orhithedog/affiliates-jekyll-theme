@@ -6,7 +6,7 @@ logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.png'
 paginate: 12
 
-url: "https://orhithedog.github.io/"
+#url: "https://orhithedog.github.io/"
 baseurl:
 
 # override the default url structure
