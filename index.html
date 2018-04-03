@@ -14,7 +14,11 @@ title: Home
     <div class="wrapintro">
         <h1>Blog de rutas de orhithedog</h1>
         <h2 class="lead">"Affiliates" is a Jekyll theme designed & developed by WowThemesNet, best suitable for affiliate marketing.</h2> 
+
+        <!--
         <a href="{{ "/posts/" | absolute_url }}" class="btn">Ver todas las rutas</a>
+        -->
+        <a href="{{ "/posts/" | prepend: site.baseurl }}" class="btn btn-success btn-lg">Ver todas las rutas</a>
     </div>
 </section>
 
